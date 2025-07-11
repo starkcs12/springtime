@@ -1,44 +1,79 @@
-  /* Style the body */
+/* Base body style */
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
 }
 
-/* Style the header */
+/* Header styling */
 header {
-  background-color: #d4eaf7;
+  background-color: #cce7f7;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Style the nav */
+/* Navigation bar styling */
 nav {
-  background-color: #a8d0e6;
+  background-color: #89c2d9;
+  padding: 10px 0;
 }
 
-/* Style the main content */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* Main section styling */
 main {
   background-color: #f0f8ff;
   font-size: 18px;
+  padding: 20px;
 }
 
-/* Style the footer */
-footer {
-  background-color: #cccccc;
-}
-
-/* Style list items */
-li {
-  display: inline-block;
-  width: 150px;
-}
-
-/* Style the main heading */
+/* Heading */
 h1 {
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
   color: #2c3e50;
 }
 
-/* Style paragraphs */
+/* Paragraphs */
 p {
   line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Footer styling */
+footer {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive image */
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto;
 }
