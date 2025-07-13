@@ -1,79 +1,60 @@
-/* Base body style */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
+/* Skip Link Styling */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
-/* Header styling */
-header {
-  background-color: #cce7f7;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Navigation bar styling */
-nav {
-  background-color: #89c2d9;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-/* Main section styling */
-main {
-  background-color: #f0f8ff;
-  font-size: 18px;
-  padding: 20px;
-}
-
-/* Heading */
-h1 {
-  text-align: center;
-  font-family: Georgia, serif;
-  color: #2c3e50;
-}
-
-/* Paragraphs */
-p {
-  line-height: 1.6;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* Footer styling */
-footer {
-  background-color: #ccc;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* Responsive image */
-img {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
+.skip-link:focus {
+  position: static;
+  width: auto;
   height: auto;
+  padding: 0.5em;
+  background-color: #000;
+  color: #fff;
+  z-index: 1000;
+}
+
+/* Comment out li styling */
+ /*
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+*/
+
+/* Style the nav */
+nav {
+  display: inline-block;
+  width: 80%;
+}
+
+/* Style only image in nav */
+nav img {
+  width: 10%;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 1.5rem;
+}
+
+/* Make grid images fill their columns */
+.grid img {
+  width: 100%;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
